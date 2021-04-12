@@ -1,0 +1,41 @@
+from math import *
+
+b=int(input("Kadu miklu tu velies izcept: Plana milka(1), Gaisiga mikla(2)? - "))
+print(" ")
+if b==1: 
+         print("Lai izcept planu miklu:") 
+         print(" sausais Raugs - 1 tejkarote,")
+         print(" cukurs - 1 tejkarote,")
+         print(" sals - 0,5 tejkarote,")
+         print(" augu ella - 2 edamkarotes,")
+         print(" milti - 1 glaze 250 g")
+else: 
+      print("Lai izcept gaisigu miklu:")      
+      print(" sausais Raugs - 2 tejkarote,")
+      print(" cukurs - 1.5 tejkarote,")
+      print(" sals - 0,5 tejkarote,")
+      print(" augu ella - 2 edamkarotes,")
+      print(" milti - 3.5 glaze 450 g ")
+print(" ")
+print(" ")
+c=int(input("Kuru picu tu velies izcept: Siera pica(1), Desu pica(2), Vistas pica(3)? - "))
+print(" ")
+if c==1:        
+         print("Lai izcept Siera picu:")
+         print(" mozzarella siers (sasmalcinats uz rives) - 310 g (3 glazes),")
+         print(" parmezana siers (sasmalcinats uz rives) - 1/4 glaze,")
+         print(" augu ella kukas ellosanai - 1 edamkarote")
+elif c==2:         
+         print("Lai izcept Desu picu:")
+         print(" siers - 250 g,")
+         print(" desa - 200 g,")
+         print(" tomati - 2 gab.")
+else: 
+      print("Lai izcept Vistas picu:")
+      print(" varita vistas fileja,")
+      print(" sipoli - ,")
+      print(" tomati - ,")
+      print(" olivas - ,")
+      print(" majoneze - ,")
+      print(" tomatu kecups - ,")
+      print(" siers - ")
