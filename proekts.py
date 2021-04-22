@@ -1,6 +1,17 @@
 from math import *
+print("")
 print("!!!Picas ir pieredzetas uz 45 cm diametru!!!")
-print("")  
+
+print("___________________________________________________________")
+print("")
+
+cilveki=float(input("Cik cilveku edis picu? - "))
+skaits=cilveki/4
+print("Uz", "%.0f"%cilveki, "cilvekiem ir paredzetas", "%.0f"%ceil(skaits) ,"picas")
+
+print("___________________________________________________________")
+print("")
+
 print("Mervienibas: ml un g - 1, karotes un glazes - 2")
 print("Miklas: plana mikla - 1, gaisiga mikla - 2")
 print("")  
@@ -9,6 +20,7 @@ print("Piemers: 1.1")
 print("")
 mervienibamikla=float(input("Kada mervieniba un ar kadu miklu tu velies pagatavot picu - "))
 print("")  
+if mervienibamikla==1.1: pirmamaksa=skaits*6.65
 if mervienibamikla==1.1:
          print("Lai izcept planu miklu:") 
          print(" olas - 1 gabals,")
@@ -16,29 +28,32 @@ if mervienibamikla==1.1:
          print(" augu ella - 20 ml,")
          print(" udens - 60 ml,")
          print(" milti - 165 g")         
-elif mervienibamikla==1.2: 
+if mervienibamikla==1.2: pirmamaksa=skaits*5.08
+if mervienibamikla==1.2:
          print("Lai izcept gaisigu miklu:")      
          print(" sausais raugs - 10 g,")
          print(" cukurs - 30 g,")
          print(" sals - 3.5 g,")
          print(" augu ella - 40 ml,")
          print(" udens - 280 ml")
-elif mervienibamikla==2.1: 
+if mervienibamikla==2.1: pirmamaksa=skaits*6.65
+if mervienibamikla==2.1:
          print("Lai izcept planu miklu:") 
          print(" olas - 1 gabals,")
          print(" sals - 1 tejkarotes,")
          print(" augu ella - 20 ml,")  
          print(" udens - 3 edamkarotes,")
          print(" milti - 1.5 glaze")
-elif mervienibamikla==2.2: 
+if mervienibamikla==2.2: pirmamaksa=skaits*5.08
+if mervienibamikla==2.2:
          print("Lai izcept gaisigu miklu:")      
-         print(" sausais Raugs - 2 tejkarotes,")
+         print(" sausais raugs - 2 tejkarotes,")
          print(" cukurs - 1.5 edamkarotes,")
          print(" sals - 0.5 tejkarotes,")
          print(" augu ella - 2 edamkarotes,")
          print(" udens - 1.5 glazes")
-else:
-         print("Sadas atbildes nav.") 
+if 2<mervienibamikla<1.1: 
+         print("Sadas atbildes nav.")
          
 print("___________________________________________________________")
 print(" ")
@@ -51,45 +66,51 @@ print("Piemers: 1.1")
 print(" ")
 pizza=float(input("Kada mervieniba un kadu picu tu velies pagatavot - "))
 print(" ")
-if pizza==1.1: 
+if pizza==1.1: otramaksa=skaits*5.55
+if pizza==1.1:
          print("Lai izcept Siera picu:")
          print(" mozzarella siers - 250 g,")
          print(" parmezana siers - 100 g,")
          print(" kiploks - 10 g")
          print(" sviests - 30 g")
-elif pizza==1.2: 
+if pizza==1.2: otramaksa=skaits*4.90
+if pizza==1.2:
          print("Lai izcept Desu picu:")
          print(" siers - 100 g,")
          print(" kupinata desa - 200 g,")
          print(" tomati - 250 g")
          print(" tomatu merce - 90 g")
-elif pizza==1.3: 
+if pizza==1.3: otramaksa=skaits*6.33
+if pizza==1.3:
          print("Lai izcept Vistas picu:")
          print(" vistas fileja - 330 g,")
          print(" sipoli - 46 g,")
          print(" majoneze - 17 g,")
          print(" augu ella - 13 ml,")
          print(" siers - 133 g")
-elif pizza==2.1: 
+if pizza==2.1: otramaksa=skaits*5.55
+if pizza==2.1:
          print("Lai izcept Siera picu:")
          print(" mozzarella siers - 250 g,")
          print(" parmezana siers - 100 g,")
          print(" kiploks - 2 daivinas")
          print(" sviests - 1.5 edamkarotes")
-elif pizza==2.2:
+if pizza==2.2: otramaksa=skaits*4.90
+if pizza==2.2:
          print("Lai izcept Desu picu:")
          print(" siers - 100 g,")
          print(" kupinata desa - 200 g,")
          print(" tomati - 2,5 gabali")
          print(" tomatu merce - 4 edamkarotes")
-elif pizza==2.3: 
+if pizza==2.3: otramaksa=skaits*6.33
+if pizza==2.3:
          print("Lai izcept Vistas picu:")
          print(" vistas fileja - 330 g,")
          print(" sipoli - 0.5 gabals,")
          print(" majoneze - 1 edamkarote,")
          print(" augu ella - 1 edamkarote,")
          print(" siers - 133 g")
-else:
+if 2<pizza<1.1: 
          print("Sadas atbildes nav.")
          
 print("___________________________________________________________")
@@ -103,31 +124,35 @@ print("Piemers: 1.1")
 print(" ")
 merces=float(input("Vai jus velaties izmantot merci? Ja velaties, tad kadu? - "))
 print(" ")
+if merces==1.1: tresamaksa=cilveki*0.18
 if merces==1.1:
-         print("Kiploku merces cena ir 2 eiro")
-elif merces==1.2:
-         print("Saldskaba merces cena ir 1 eiro")
-elif merces==1.3:
-         print("Tomatu merces cena ir 1 eiro")
-elif merces==1.4:
-         print("BBQ merces cena ir 3 eiro")
-elif merces==2:
-         print("Bez merzes ari ir garsigi:)")
-else: 
+         print("30 g kiploku merces cena ir 0.18 eiro")
+if merces==1.2: tresamaksa=cilveki*0.15
+if merces==1.2:
+         print("30 g saldskaba merces cena ir 0.15 eiro")
+if merces==1.3: tresamaksa=cilveki*0.05
+if merces==1.3:
+         print("30 g tomatu merces cena ir 0.05 eiro")
+if merces==1.4: tresamaksa=cilveki*0.19
+if merces==1.4:
+         print("30 g BBQ merces cena ir 0.19 eiro")
+if merces==2: tresamaksa=cilveki*0
+if merces==2:
+         print("Bez merces ari ir garsigi:)")
+if 2<merces<1.1: 
          print("Sadas atbildes nav.")
          
 print("___________________________________________________________")
 print(" ")
 
-cilveki=float(input("Cik cilveku edis picu? - "))
-skaits=cilveki/4
-print("Uz", "%.0f"%cilveki, "cilvekiem ir paredzetas", "%.0f"%(ceil(skaits)) ,"picas")
+kopa=(pirmamaksa+otramaksa+tresamaksa)
+print("Par", "%.0f"%cilveki, "cilveku izmantoto produktu skaitu bus jasamaksa", "%.0f"%ceil(kopa), "eiro")
 
 print("___________________________________________________________")
 print(" ")
 
 print("Miklas: plana mikla - 1, gaisiga mikla - 2")
-miklucena=int(input("Kadas picas miklu cenu tu gribi uzzinat? - "))
+miklucena=int(input("Ar kadas miklas produktu cenam jus velaties iepazisties? - "))
 print(" ")
 if miklucena==1:
          def plana_mikla_cena(olas,sals,ella,udens,milti):
@@ -168,7 +193,7 @@ print("___________________________________________________________")
 print(" ")
 
 print("Picas veidi: siera pica - 1, desu pica - 2, vistas pica - 3")
-picascena=int(input("Kadas picas cenu tu gribi uzzinat? - "))
+picascena=int(input("Ar kadas picas produktu cenam jus velaties iepazisties? - "))
 print("")
 if picascena==1:
          def sieras_picas_cena(mozzarella,parmezans,kiploks,sviests):
@@ -183,7 +208,7 @@ if picascena==1:
          print("Viens kiploks maksa 0.05 eiro")
          print("Viena 250 g sviesta paka maksa 1.50 eiro")
          print("")
-         print("Sieras picas cena ir", "%.2f"%cena , "eiro")
+         print("Sieras picas ingredientu cena ir", "%.2f"%cena , "eiro")
 elif picascena==2:
          def desas_picas_cena(siers,desa,tomati,merce):
                   return siers+desa+tomati+merce
@@ -197,7 +222,7 @@ elif picascena==2:
          print("250 g tomatu maksa 0.40 eiro")
          print("500 g tomatu merce maksa 1.00 eiro")
          print("")
-         print("Desas picas cena ir", "%.2f"%cena , "eiro")
+         print("Desas picas ingredientu cena ir", "%.2f"%cena , "eiro")
 elif picascena==3:
          def vistas_picas_cena(vista,sipoli,majoneze,ella,siers):
                   return vista+sipoli+majoneze+ella+siers
@@ -213,6 +238,6 @@ elif picascena==3:
          print("Viena litrs augu ellas iepakojums maksa 2.00 eiro")
          print("Viena 133g siera gabals maksa 1.50 eiro")
          print("")
-         print("Vistas picas cena ir", "%.2f"%cena , "eiro")
+         print("Vistas picas ingredientu cena ir", "%.2f"%cena , "eiro")
 else: 
          print("Sadas atbildes nav.")
