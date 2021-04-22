@@ -6,7 +6,7 @@ print("Miklas: plana mikla - 1, gaisiga mikla - 2")
 print("")  
 print("Izveleto mervienibu un miklu atdali ar punktu") 
 print("Piemers: 1.1")
-print("")  
+print("")
 mervienibamikla=float(input("Kada mervieniba un ar kadu miklu tu velies pagatavot picu - "))
 print("")  
 if mervienibamikla==1.1:
